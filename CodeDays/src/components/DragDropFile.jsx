@@ -76,7 +76,7 @@ function DragDropFile() {
     formData.append('jobDescription', jobDescription);
 
     try {
-        const response = await fetch('/upload', {
+        const response = await fetch('https://codedaysbackend.onrender.com/upload', {
             method: 'POST',
             body: formData,
         });
@@ -120,7 +120,7 @@ function DragDropFile() {
     const answer = answerTextArea.value;
   
     try {
-      const response = await fetch('/submit-answer', {
+      const response = await fetch('https://codedaysbackend.onrender.com/submit-answer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
